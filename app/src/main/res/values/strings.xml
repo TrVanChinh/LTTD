@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">giaidienBai2</string>
+    <string name="_2050531200112">2050531200112</string>
+    <string name="tr_n_v_n_chi_nh">Trần Văn Chính</string>
+    <string name="_125">125</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="followers">Followers</string>
+    <string name="friends">Friends</string>
+    <string name="_250">250</string>
+    <string name="email_mail_email_com">email: mail@email.com</string>
+    <string name="web_cssauthor_com">web: cssauthor.com/</string>
+    <string name="phone_9999999">Phone: 9999999</string>
+    <string name="skype_me007">Skype: me007</string>
+    <string name="login_me">LOGIN ME</string>
+    <string name="lost_password">Lost password?</string>
+    <string name="user_name">User Name</string>
+    <string name="password">*************</string>
+    <string name="user">null</string>
+</resources>
