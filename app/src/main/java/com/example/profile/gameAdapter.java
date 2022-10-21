@@ -4,42 +4,31 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
+
 import android.widget.ImageView;
 import android.widget.TextView;
+import java.util.ArrayList;
 
-import java.util.List;
+public class gameAdapter extends ArrayAdapter<game> {
 
-public class gameAdapter extends BaseAdapter{
-    private Context context;
-    private int layout;
-    private List<game> listgame;
+    public gameAdapter(Context context, ArrayList<game> gameArrayAdapter) {
 
-    public gameAdapter(Context context, int layout, List<game> listgame) {
-        this.context = context;
-        this.layout = layout;
-        this.listgame = listgame;
+        super(context, R.layout.dong_game, gameArrayAdapter);
     }
 
-    @Override
-    public int getCount() {
-        return listgame.size();
-    }
 
     @Override
-    public Object getItem(int i) {
-        return null;
-    }
+    public View getView(int position, View view, ViewGroup parent) {
+        game game = getItem(position);
 
-    @Override
-    public long getItemId(int i) {
-        return 0;
-    }
+        if(view == null){
+            view = LayoutInflater.from(getContext()).inflate(R.layout.dong_game,parent,false);
 
-    @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        view = inflater.inflate(layout, null);
+        }
+
+
+
         TextView txtTen = (TextView) view.findViewById(R.id.tvTen);
         TextView txtMota = (TextView) view.findViewById(R.id.tvmota);
         TextView txtDanhGia = (TextView) view.findViewById(R.id.tvDanhGia);
@@ -48,17 +37,16 @@ public class gameAdapter extends BaseAdapter{
         ImageView imgAnh = (ImageView) view.findViewById(R.id.logogame);
         TextView stt = (TextView) view.findViewById(R.id.tvStt);
 
-        game game = listgame.get(i);
 
-        txtTen.setText(game.getTengame());
-        txtMota.setText(game.getTheloai());
-        txtDanhGia.setText(game.getDanhgia());
-        txtDungluong.setText(game.getDungluong());
-        imgStar.setImageResource(game.getStar());
-        imgAnh.setImageResource(game.getLogogame());
-        stt.setText(game.getStt());
+        txtTen.setText(game.tengame);
+        txtMota.setText(game.theloai);
+        txtDanhGia.setText(game.danhgia);
+        txtDungluong.setText(game.dungluong);
+        imgStar.setImageResource(game.star);
+        imgAnh.setImageResource(game.logogame);
+        stt.setText(Integer.toString(game.stt));
 
-        return view;
+        return  view;
     }
 }
 

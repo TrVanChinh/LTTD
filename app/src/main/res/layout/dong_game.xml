@@ -32,11 +32,12 @@
 
     <TextView
         android:id="@+id/tvTen"
-        android:layout_width="wrap_content"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/logogame"
-        android:textColor="#E84A4A"
+        android:background="@drawable/background_name_pass"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 

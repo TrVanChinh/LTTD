@@ -19,7 +19,7 @@ import java.util.List;
 
 public class Listview extends AppCompatActivity {
     ListView lvGame;
-    List<game> mListgame;;
+    ArrayList<game> mListgame;
     gameAdapter gameAdt;
     BottomNavigationView bottomNavigationView;
 
@@ -71,9 +71,9 @@ public class Listview extends AppCompatActivity {
             game game = new game(stt[i],imglogo[i],anhgame[i],tengame[i],theloai[i],danhgia[i],dungluong[i],star[i],chitiet[i]);
             mListgame.add(game);
         }
-        gameAdt = new gameAdapter(this, R.layout.dong_game, mListgame);
+        gameAdt = new gameAdapter(Listview.this,mListgame);
         lvGame.setAdapter(gameAdt);
-        lvGame.setLongClickable(true);
+        lvGame.setClickable(true);
         lvGame.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id    ) {
