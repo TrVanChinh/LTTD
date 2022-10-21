@@ -50,12 +50,12 @@ public class gameAdapter extends BaseAdapter{
 
         game game = listgame.get(i);
 
-        txtTen.setText(game.getTen());
-        txtMota.setText(game.getMota());
+        txtTen.setText(game.getTengame());
+        txtMota.setText(game.getTheloai());
         txtDanhGia.setText(game.getDanhgia());
         txtDungluong.setText(game.getDungluong());
         imgStar.setImageResource(game.getStar());
-        imgAnh.setImageResource(game.getHinh());
+        imgAnh.setImageResource(game.getLogogame());
         stt.setText(game.getStt());
 
         return view;

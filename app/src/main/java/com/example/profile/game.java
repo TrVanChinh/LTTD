@@ -2,78 +2,97 @@ package com.example.profile;
 
 public class game {
 
-    private String ten;
-    private String Mota;
-    private String Danhgia;
-    private String Dungluong;
-    private int Star;
-    private int hinh;
-    private String stt;
+    private int stt;
+    private int logogame;
+    private int anhgame;
+    private String tengame;
+    private String theloai;
+    private String danhgia;
+    private String dungluong;
+    private int star;
+    private String chitiet;
 
-
-    public game(String ten, String mota, String danhgia, String dungluong, int star, int hinh, String stt) {
-        this.ten = ten;
-        this.Mota = mota;
-        this.Danhgia = danhgia;
-        this.Dungluong = dungluong;
-        this.Star = star;
-        this.hinh = hinh;
+    public game(int stt, int logogame, int anhgame, String tengame, String theloai, String danhgia, String dungluong, int star, String chitiet) {
         this.stt = stt;
+        this.logogame = logogame;
+        this.anhgame = anhgame;
+        this.tengame = tengame;
+        this.theloai = theloai;
+        this.danhgia = danhgia;
+        this.dungluong = dungluong;
+        this.star = star;
+        this.chitiet = chitiet;
     }
 
-    public String getDanhgia() {
-        return Danhgia;
-    }
-
-    public void setDanhgia(String danhgia) {
-        Danhgia = danhgia;
-    }
-
-    public String getDungluong() {
-        return Dungluong;
-    }
-
-    public void setDungluong(String dungluong) {
-        Dungluong = dungluong;
-    }
-
-    public int getStar() {
-        return Star;
-    }
-
-    public void setStar(int star) {
-        Star = star;
-    }
-
-    public String getTen() {
-        return ten;
-    }
-
-    public void setTen(String ten) {
-        this.ten = ten;
-    }
-
-    public String getMota() {
-        return Mota;
-    }
-
-    public void setMota(String mota) {
-        Mota = mota;
-    }
-
-    public int getHinh() {
-        return hinh;
-    }
-
-    public void setHinh(int hinh) {
-        this.hinh = hinh;
-    }
-
-    public String getStt() {
+    public int getStt() {
         return stt;
     }
 
-    public void setStt(String stt) {
+    public void setStt(int stt) {
         this.stt = stt;
+    }
+
+    public int getLogogame() {
+        return logogame;
+    }
+
+    public void setLogogame(int logogame) {
+        this.logogame = logogame;
+    }
+
+    public int getAnhgame() {
+        return anhgame;
+    }
+
+    public void setAnhgame(int anhgame) {
+        this.anhgame = anhgame;
+    }
+
+    public String getTengame() {
+        return tengame;
+    }
+
+    public void setTengame(String tengame) {
+        this.tengame = tengame;
+    }
+
+    public String getTheloai() {
+        return theloai;
+    }
+
+    public void setTheloai(String theloai) {
+        this.theloai = theloai;
+    }
+
+    public String getDanhgia() {
+        return danhgia;
+    }
+
+    public void setDanhgia(String danhgia) {
+        this.danhgia = danhgia;
+    }
+
+    public String getDungluong() {
+        return dungluong;
+    }
+
+    public void setDungluong(String dungluong) {
+        this.dungluong = dungluong;
+    }
+
+    public int getStar() {
+        return star;
+    }
+
+    public void setStar(int star) {
+        this.star = star;
+    }
+
+    public String getChitiet() {
+        return chitiet;
+    }
+
+    public void setChitiet(String chitiet) {
+        this.chitiet = chitiet;
     }
 }
