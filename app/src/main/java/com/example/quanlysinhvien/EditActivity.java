@@ -69,13 +69,14 @@ public class EditActivity extends AppCompatActivity {
                 svDAO112.CapNhatSinhVien(sinhvien);
             }
         });
-
         btnXoa112.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                String msv = new String(String.valueOf(sinhvien.getMaSV()));
+                svDAO112.delete(msv);
             }
         });
+
     }
     private void AnhXa(){
         edtHoTen112 = (EditText) findViewById(R.id.edt_hoten);

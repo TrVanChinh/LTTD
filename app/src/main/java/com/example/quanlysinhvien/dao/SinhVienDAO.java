@@ -61,7 +61,7 @@ public class SinhVienDAO {
     }
     public int delete(String id){
         SQLiteDatabase database = csdl112.getWritableDatabase();
-        return database.delete("nhanvien","MaSV=?", new String[]{id});
+        return database.delete("SinhVien","MaSV=?", new String[]{id});
     }
 
 }
