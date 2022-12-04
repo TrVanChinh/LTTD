@@ -54,7 +54,7 @@
             android:name=".SignUpctivity"
             android:exported="false" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".HeyActivity"
             android:exported="false" />
         <activity
             android:name=".GameXepChu"
@@ -63,7 +63,7 @@
             android:name=".hoso"
             android:exported="false" />
         <activity
-            android:name=".HeyActivity"
+            android:name=".SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
